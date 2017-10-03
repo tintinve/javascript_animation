@@ -1,9 +1,17 @@
+body{
+    background-color: navy;
+    position: relative;
+}
 .rocket {
+    position: absolute;
     width: 50px;
     margin-top: 50vw;
     margin-left: 50vw;
 }
-
+.control_panel{
+    display: inline-block; 
+    background-color: aqua;
+}
 .animacion_vuela {
     animation: parametros_de_vuelo 5s infinite;
 
