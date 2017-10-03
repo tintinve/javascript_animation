@@ -3,23 +3,52 @@
     margin-top: 50vw;
     margin-left: 50vw;
 }
+
 .animacion_vuela {
     animation: parametros_de_vuelo 5s infinite;
 
 }
+
 @keyframes parametros_de_vuelo {
     25% {
-        transform: translateY(-50vw)
-        scale(2)
-        rotate(90deg);
-    }  
+        transform: translateY(-50vw) scale(2) rotate(90deg);
+    }
 }
+
 .animacion_rotacion {
     animation: parametros_de_rotacion 5s infinite;
 
 }
+
 @keyframes parametros_de_rotacion {
     25% {
         transform: rotate(90deg);
-    }  
+    }
+}
+
+.animacion_moveTo30 {
+    animation-name: parametros_de_moveTo30;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_moveTo30 {
+    0% {
+        transform: 
+            translateY(-80vw)
+            translateX(-80vw)
+            scale(2) 
+            rotate(90deg);
+    }
+     25% {
+        transform: 
+            translateY(0vw)
+            translateX(0vw)
+            scale(2) 
+            rotate(90deg);
+    }
 }
