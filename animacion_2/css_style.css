@@ -134,16 +134,111 @@
 
 @keyframes parametros_de_fadeIn {
      25% {
-        opacity: 0.75
+        transform: 
+            translateY(-30vw)
+            scale(3);
+         opacity: 0.1
     }
-     50% {
+    35% {
+        transform: 
+            translateY(-30vw)
+            scale(3);
+         opacity: 0.3
+    }
+    50% {
+         transform: 
+            translateY(-30vw)
+            scale(3);
         opacity: 0.5
+        
     }
     75% {
-        opacity: 0.25
+        transform: 
+            translateY(-30vw)
+            scale(3);
+        opacity: 0.75
     }
     100% {
-        opacity: 0
+        transform: 
+            translateY(-30vw)
+            scale(3);
+        opacity: 1
     }
 }
+.animacion_moveLeft {
+    animation-name: parametros_de_moveLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_moveLeft {
+    0%{
+        transform: rotate(-90deg)
+    } 
+    100% {
+        transform: 
+            translateX(-40vw)
+        rotate(-90deg)
+    }
+}
+.animacion_moveRight {
+    animation-name: parametros_de_moveRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_moveRight {
+    0%{
+        transform: rotate(90deg)
+    } 
+    100% {
+        transform: 
+            translateX(40vw)
+        rotate(90deg)
+    }
+}
+.animacion_screenTrip {
+    animation-name: parametros_de_screenTrip;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_screenTrip {
+    0%{
+        transform: 
+            translateY()
+    } 
+    25% {
+        transform: 
+            translateX(40vw)
+        rotate(90deg)
+    }
+    50% {
+        transform: 
+            translateX(40vw)
+            translateY(-40vw)
+        rotate(-90deg)
+    }
+    75% {
+        transform: 
+            translateX(-40vw)
+            translateY(40vw)
+        rotate(-90deg)
+    }
+}
+
+
+
 

@@ -61,3 +61,30 @@ fadeIn_button.addEventListener('click', fadeIn);
 function fadeIn(){
 imagen.classList.toggle("animacion_fadeIn");
 }} 
+//Animacion 8 moveLeft
+{
+let imagen = document.querySelector(".rocket");
+let moveLeft_button = document.querySelector(".moveLeft_button");
+moveLeft_button.addEventListener('click', moveLeft);
+
+function moveLeft(){
+imagen.classList.toggle("animacion_moveLeft");
+}} 
+//Animacion 9 moveRight
+{
+let imagen = document.querySelector(".rocket");
+let moveRight_button = document.querySelector(".moveRight_button");
+moveRight_button.addEventListener('click', moveRight);
+
+function moveRight(){
+imagen.classList.toggle("animacion_moveRight");
+}} 
+//Animacion 10 screenTrip
+{
+let imagen = document.querySelector(".rocket");
+let screenTrip_button = document.querySelector(".screenTrip_button");
+screenTrip_button.addEventListener('click', screenTrip);
+
+function screenTrip(){
+imagen.classList.toggle("animacion_screenTrip");
+}} 
