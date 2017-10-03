@@ -1,0 +1,20 @@
+.rocket {
+    width: 50px;
+    margin-top: 100px;
+
+}
+
+.animacion_vuela {
+    animation: parametros_de_vuelo 1s infinite;
+
+}
+
+
+@keyframes parametros_de_vuelo {
+    25% {
+        transform: translatey(100px)
+    }
+    75% {
+        transform: translateX(150px)
+    }
+}
