@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: purple;
+        }
+
+        .shakeCSS {
+            animation: shakeItBaby 1s infinite;
+
+        }
+
+
+        @keyframes shakeItBaby {
+            25% {
+                transform: translateX(-10px)
+            }
+            75% {
+                transform: translateX(10px)
+            }
+        }
+
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <img class="hero" src="hero.png" alt="hero.png">
+    <button class="shake">Shake</button>
+    <script>
+        let char = document.querySelector("img.hero");
+        let shakeButton = document.querySelector(".shake");
+        shakeButton.addEventListener('click', makeShake);
+
+        function makeShake(){
+            console.log("make shake");
+            char.classList.toggle("shakeCSS");
+        }
+
+    </script>
+
+
+</body>
+
+</html>
