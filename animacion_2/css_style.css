@@ -65,7 +65,7 @@
 @keyframes parametros_de_moveFrom30 {
     0% {
         transform: 
-            translateY(80vw)
+            translateY(-80vw)
             translateX(80vw)
             scale(2) 
             rotate(90deg);
@@ -78,3 +78,72 @@
             rotate(90deg);
     }
 }
+.animacion_oneJump {
+    animation-name: parametros_de_oneJump;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_oneJump {
+     25% {
+        transform: 
+            translateY(-30vw)
+            translateX(0vw)
+            scale(3) 
+    }
+}
+.animacion_jumping {
+    animation-name: parametros_de_jumping;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.17,.67,.92,.05);
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_jumping {
+     25% {
+        transform: 
+            translateY(-30vw)
+            translateX(-15vw)
+            scale(3);
+    }
+     35% {
+        transform: 
+            translateY(-10vw)
+            translateX(45vw)
+            rotate(360deg)
+            scale(6); 
+         
+    }
+}
+.animacion_fadeIn {
+    animation-name: parametros_de_fadeIn;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_fadeIn {
+     25% {
+        opacity: 0.75
+    }
+     50% {
+        opacity: 0.5
+    }
+    75% {
+        opacity: 0.25
+    }
+    100% {
+        opacity: 0
+    }
+}
+

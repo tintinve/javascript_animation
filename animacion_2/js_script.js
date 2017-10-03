@@ -25,7 +25,7 @@ moveTo30_button.addEventListener('click', moveTo30);
 function moveTo30(){
 imagen.classList.toggle("animacion_moveTo30");
 }}   
-//Animacion 3 moveFrom30
+//Animacion 4 moveFrom30
 {
 let imagen = document.querySelector(".rocket");
 let moveFrom30_button = document.querySelector(".moveFrom30_button");
@@ -33,4 +33,31 @@ moveFrom30_button.addEventListener('click', moveFrom30);
 
 function moveFrom30(){
 imagen.classList.toggle("animacion_moveFrom30");
-}}   
+}} 
+//Animacion 5 oneJump
+{
+let imagen = document.querySelector(".rocket");
+let oneJump_button = document.querySelector(".oneJump_button");
+oneJump_button.addEventListener('click', oneJump);
+
+function oneJump(){
+imagen.classList.toggle("animacion_oneJump");
+}} 
+//Animacion 6 jumping
+{
+let imagen = document.querySelector(".rocket");
+let jumping_button = document.querySelector(".jumping_button");
+jumping_button.addEventListener('click', jumping);
+
+function jumping(){
+imagen.classList.toggle("animacion_jumping");
+}} 
+//Animacion 7 fadeIn
+{
+let imagen = document.querySelector(".rocket");
+let fadeIn_button = document.querySelector(".fadeIn_button");
+fadeIn_button.addEventListener('click', fadeIn);
+
+function fadeIn(){
+imagen.classList.toggle("animacion_fadeIn");
+}} 
