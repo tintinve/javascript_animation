@@ -25,3 +25,12 @@ moveTo30_button.addEventListener('click', moveTo30);
 function moveTo30(){
 imagen.classList.toggle("animacion_moveTo30");
 }}   
+//Animacion 3 moveFrom30
+{
+let imagen = document.querySelector(".rocket");
+let moveFrom30_button = document.querySelector(".moveFrom30_button");
+moveFrom30_button.addEventListener('click', moveFrom30);
+
+function moveFrom30(){
+imagen.classList.toggle("animacion_moveFrom30");
+}}   

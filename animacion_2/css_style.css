@@ -52,3 +52,29 @@
             rotate(90deg);
     }
 }
+.animacion_moveFrom30 {
+    animation-name: parametros_de_moveFrom30;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_moveFrom30 {
+    0% {
+        transform: 
+            translateY(80vw)
+            translateX(80vw)
+            scale(2) 
+            rotate(90deg);
+    }
+     25% {
+        transform: 
+            translateY(0vw)
+            translateX(0vw)
+            scale(2) 
+            rotate(90deg);
+    }
+}
