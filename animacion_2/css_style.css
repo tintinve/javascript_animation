@@ -1,0 +1,27 @@
+.rocket {
+    width: 50px;
+    margin-top: 50vw;
+    margin-left: 50vw;
+}
+.animacion_vuela {
+    animation: parametros_de_vuelo 5s infinite;
+
+}
+@keyframes parametros_de_vuelo {
+    25% {
+        transform: translateY(-50vw)
+        scale(2)
+        rotate(90deg)
+    }  
+}
+.animacion_rotacion {
+    animation: parametros_de_rotacion 5s infinite;
+
+}
+@keyframes parametros_de_rotacion {
+    25% {
+        transform: translateY(-50vw)
+        scale(2)
+        rotate(90deg)
+    }  
+}
