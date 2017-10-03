@@ -11,7 +11,7 @@
     25% {
         transform: translateY(-50vw)
         scale(2)
-        rotate(90deg)
+        rotate(90deg);
     }  
 }
 .animacion_rotacion {
@@ -20,8 +20,6 @@
 }
 @keyframes parametros_de_rotacion {
     25% {
-        transform: translateY(-50vw)
-        scale(2)
-        rotate(90deg)
+        transform: rotate(90deg);
     }  
 }

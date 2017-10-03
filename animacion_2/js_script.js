@@ -9,8 +9,8 @@ imagen.classList.toggle("animacion_vuela");
 {
 let imagen = document.querySelector(".rocket");
 let rotacion_button = document.querySelector(".rotacion_button");
-rotacion_button.addEventListener('click', empieza_rota);
+rotacion_button.addEventListener('click', empieza_rotar);
 
-function empieza_rota(){
+function empieza_rotar(){
 imagen.classList.toggle("animacion_rotacion");
 }}   
