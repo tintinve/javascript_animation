@@ -1,0 +1,295 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    
+}
+body{
+    
+    height: 763px;
+    background-image: url(assets/500x763.gif);
+    background-repeat: no-repeat;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+}
+header{
+    width: 100%;
+    height: 690px;
+    grid-area: header;
+}
+
+main{
+    position: relative;
+    width: 100%;
+    grid-area: main;
+}
+.rocket {
+    position: absolute;
+    width: 70px;
+    top: -115px;
+    left: 220px;
+}
+.animacion_vuela {
+    animation: parametros_de_vuelo 5s infinite;
+
+}
+
+@keyframes parametros_de_vuelo {
+    25% {
+        transform: translateY(-50vw) scale(2) rotate(90deg);
+    }
+}
+
+.animacion_rotacion {
+    animation: parametros_de_rotacion 5s infinite;
+
+}
+
+@keyframes parametros_de_rotacion {
+    25% {
+        transform: rotate(90deg);
+    }
+}
+
+.animacion_moveTo30 {
+    animation-name: parametros_de_moveTo30;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_moveTo30 {
+    0% {
+        transform: 
+            translateY(-80vw)
+            translateX(-80vw)
+            scale(2) 
+            rotate(90deg);
+    }
+     25% {
+        transform: 
+            translateY(0vw)
+            translateX(0vw)
+            scale(2) 
+            rotate(90deg);
+    }
+}
+.animacion_moveFrom30 {
+    animation-name: parametros_de_moveFrom30;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_moveFrom30 {
+    0% {
+        transform: 
+            translateY(-80vw)
+            translateX(80vw)
+            scale(2) 
+            rotate(90deg);
+    }
+     25% {
+        transform: 
+            translateY(0vw)
+            translateX(0vw)
+            scale(2) 
+            rotate(90deg);
+    }
+}
+.animacion_oneJump {
+    animation-name: parametros_de_oneJump;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_oneJump {
+     25% {
+        transform: 
+            translateY(-30vw)
+            translateX(0vw)
+            scale(3) 
+    }
+}
+.animacion_jumping {
+    animation-name: parametros_de_jumping;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(.17,.67,.92,.05);
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_jumping {
+     25% {
+        transform: 
+            translateY(-30vw)
+            translateX(-15vw)
+            scale(3);
+    }
+     35% {
+        transform: 
+            translateY(-10vw)
+            translateX(45vw)
+            rotate(360deg)
+            scale(6); 
+         
+    }
+}
+.animacion_fadeIn {
+    animation-name: parametros_de_fadeIn;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_fadeIn {
+     25% {
+        transform: 
+            translateY(-30vw)
+            scale(3);
+         opacity: 0.1
+    }
+    35% {
+        transform: 
+            translateY(-30vw)
+            scale(3);
+         opacity: 0.3
+    }
+    50% {
+         transform: 
+            translateY(-30vw)
+            scale(3);
+        opacity: 0.5
+        
+    }
+    75% {
+        transform: 
+            translateY(-30vw)
+            scale(3);
+        opacity: 0.75
+    }
+    100% {
+        transform: 
+            translateY(-30vw)
+            scale(3);
+        opacity: 1
+    }
+}
+.animacion_moveLeft {
+    animation-name: parametros_de_moveLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_moveLeft {
+    0%{
+        transform: rotate(-90deg)
+    } 
+    100% {
+        transform: 
+            translateX(-40vw)
+        rotate(-90deg)
+    }
+}
+.animacion_moveRight {
+    animation-name: parametros_de_moveRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_moveRight {
+    0%{
+        transform: rotate(90deg)
+    } 
+    100% {
+        transform: 
+            translateX(40vw)
+        rotate(90deg)
+    }
+}
+.animacion_screenTrip {
+    animation-name: parametros_de_screenTrip;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_screenTrip {
+    0%{
+        transform: 
+            translateY()
+    } 
+    25% {
+        transform: 
+            translateX(40vw)
+        rotate(90deg)
+    }
+    50% {
+        transform: 
+            translateX(40vw)
+            translateY(-40vw)
+        rotate(-90deg)
+    }
+    75% {
+        transform: 
+            translateX(-40vw)
+            translateY(40vw)
+        rotate(-90deg)
+    }
+}
+footer{
+    
+}
+nav{
+    background-color: aqua;
+    text-align: center;
+    
+}
+nav div{
+    text-align: center;
+    display: inline-block;
+    margin: 3px;
+    width: 50px;
+    border: 4px;
+    border-style: solid;
+    border-color: blue;
+    grid-area: footer;
+    
+    
+}
+
+
+

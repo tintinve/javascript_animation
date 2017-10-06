@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    display: grid;
+    width: 375px;
+    grid-gap: 0px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+}
+header {
+    grid-area: header;
+    margin-left: 1px;
+    margin-right: 0px;
+    background-color: aqua;
+}
+main {
+    grid-area: main;
+    margin-left: 1px;
+    margin-right: 0px;
+    background-color: brown
+}
+.img_background_mobile{
+    width: 100%;
+    position: relative;
+    filter: brightness(40%);
+}
+.img_background_desktop{
+    display: none;
+    position: relative;
+    }
+.rocket{
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+    left: 44%;
+    top: 490px;
+    
+}
+.animacion_fadeIn {
+    animation-name: parametros_de_fadeIn;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    animation-fill-mode: initial;
+}
+
+@keyframes parametros_de_fadeIn {
+     25% {
+        transform: 
+            translateY(-30vw)
+            scale(3);
+         opacity: 0.1
+    }
+    35% {
+        transform: 
+            translateY(-30vw)
+            scale(3);
+         opacity: 0.3
+    }
+    50% {
+         transform: 
+            translateY(-30vw)
+            scale(3);
+        opacity: 0.5
+        
+    }
+    75% {
+        transform: 
+            translateY(-30vw)
+            scale(3);
+        opacity: 0.75
+    }
+    100% {
+        transform: 
+            translateY(-30vw)
+            scale(3);
+        opacity: 1
+    }
+}
+footer {
+    grid-area: footer;
+    margin-left: 1px;
+    margin-right: 0px;
+    background-color: yellow;
+}
+    
+/*//////////////////////////////DESKTOP//////////////////*/
+@media all and (min-width:1024px) {
+body {
+    width: 1024px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header" 
+        "main"
+        "footer"
+    }    
+        
+.img_background_mobile{
+    display: none;
+}
+.img_background_desktop{
+    display: inline-flex;
+    width: 100%;
+    }
