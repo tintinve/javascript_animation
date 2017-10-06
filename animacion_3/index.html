@@ -8,5 +8,27 @@
 </head>
 
 <body>
+<button>Test</button>
+<!--If you have a variable that is not going to change, s utiliza "const" // buscar "babel javscript compatibiliztor"-->
+<script>
+    let clickCounter = 0;
+let b = document.querySelector("button");
+    addEventListener("click", count);
+
+function count(){
+   
+    clickCounter++;
+    if(clickCounter == 1){
+    console.log("Great, good for you!")
+    }
+    else if(clickCounter > 3){
+    console.log("Stio it!!!");
+    }}
+        
+</script>
+
 </body>
+
+
+
 </html>
