@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+        <style>
+        .myBox {
+            /* 100 */
+            background: red;
+            width: 100px;
+            height: 100px;
+            transition: background-color 1s;
+            
+        }
+
+        .orange {
+            /* 10 */
+            background-color: orange;
+        }
+        .green{
+            background-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="myBox"></div>
+
+<script>
+    let counter = 0;
+    setInterval(count,1000);
+    function count() {
+        counter++
+        console.log(counter)
+        if(counter == 100){
+            console.log("STOP!")
+                         clearInterval(myTimerHandle)
+        }
+        
+    }
+        
+</script>
+
+</body>
+
+
+
+</html>

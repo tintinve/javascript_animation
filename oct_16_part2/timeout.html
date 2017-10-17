@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    li {
+      background:lightblue;
+      font-size: 3em;
+    }
+    .stuff {
+
+      text-decoration: line-through;
+    }
+      .hidden {
+          opacity:0
+      }
+  </style>
+</head>
+
+<body>
+ <ul>
+
+   <li>Neo</li>
+   <li>Morpheous</li>
+   <li>Trinity</li>
+   <li>Mouse</li>
+   <li>Swich</li>
+   <li>Oracle</li>
+   <li>Smith</li>
+ </ul>
+
+  <script>
+  let liItems = document.querySelectorAll("li");
+    liItems.forEach(addClass);
+
+    function addClass(oneLi, index){
+        oneLi.classList.add('hidden')
+      oneLi.addEventListener('click', listClicked);
+        
+        setTimeout(function(){
+            oneLi.classList.remove('hidden')
+        }, index*500)
+    }
+
+    function listClicked(evt){
+      console.log(evt.target);
+      evt.target.classList.toggle("stuff");
+    }
+  </script>
+
+
+
+
+
+
+
+
+</body>
+</html>

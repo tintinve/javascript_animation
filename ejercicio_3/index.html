@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,43 @@
 </head>
 
 <body>
-<div class="caja1">Box</div>
+    <div class="caja1">Box</div>
 
 
 </body>
 
 <script>
-    
     let box = document.querySelector(".caja1");
     box.addEventListener('click', change);
+    box.addEventListener("click", count);
 
     function change() {
         box.classList.toggle("change_color");
     }
-    
-    </script>
+
+    let clickCounter = 3;
+    let box = document.querySelector(".caja1");
+  
+
+    function count() {
+    clickCounter ++;
+    if (clickCounter == 5) {
+    console.log("click_count5_OK");
+    box.addEventListener('click', change_orange);
+
+    function change_orange() {
+    box.classList.toggle("change_orange");
+    }
+    } else if (clickCounter == 7) {
+    console.log("Stio it!!!1");
+    box.addEventListener('click', change_green);
+
+    function change_green() {
+    box.classList.toggle("change_green");
+    }
+    }
+    }
+
+</script>
 
 </html>

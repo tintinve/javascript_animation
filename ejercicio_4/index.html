@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #myBox {
+            /* 100 */
+            background: red;
+            width: 100px;
+            height: 100px;
+            transition: background-color 1s;
+            
+        }
+
+        .orange {
+            /* 10 */
+            background-color: orange;
+        }
+        .green{
+            background-color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="myBox">Box</div>
+
+<script>
+    let clicks = 0;
+    let div = document.querySelector("div ");
+    div.addEventListener("click", changeMe);
+
+    function changeMe() {
+        cliks++
+        console.log(cliks_A)
+        if(clicks == 1){
+            div.classList.add("orange");
+        }
+        else if (clicks ==2){
+            div.classList.add("green");
+        }
+        else{
+            div.classList.remove("orange");
+            div.classList.remove("green");
+            clicks = 0;
+        }
+    }
+
+</script>
+</body>
+
+
+
+</html>

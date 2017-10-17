@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+    li {
+      background:lightblue;
+      font-size: 3em;
+    }
+    .stuff {
+
+      text-decoration: line-through;
+    }
+      .cambia_color {
+          color: white;
+      }
+  </style>
+</head>
+
+<body>
+ <ul> 
+
+   <li>Neo</li>
+   <li>Morpheous</li>
+   <li>Trinity</li>
+   <li>Mouse</li>
+   <li>Swich</li>
+   <li>Oracle</li>
+   <li>Smith</li>
+ </ul>
+
+  <script>
+  let liItems = document.querySelectorAll("li");
+    liItems.forEach(addClass);
+
+    function addClass(oneLi, index){
+        oneLi.classList.add('cambia_size')
+        oneLi.addEventListener('click', generic_function);}
+
+    function generic_function(evt){
+      console.log(evt.target);
+      evt.target.classList.toggle("cambia_color")}
+  </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
