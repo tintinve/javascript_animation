@@ -1,43 +1,83 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style>
-    
-        img{
-            display: block;
+        img {
             max-height: 50vh;
-            
+          position: absolute;
+            top: 0px;
+            left: 50px;
+
         }
+
     </style>
 </head>
 
 <body>
-   
-   <img src="Broder.jpg" alt="">
-    <script>
-    
-    let satate = 'steam';
-    let = myImage = document.querySelector ("img");
+     
+    <img class="bro1" src="1.jpg" alt="">
 
-        myImage.addEventListener('click', function (){
-            console.log("state before: " + state);
-            if(state == 'steam'){
-                myImage.setAttribute("src", "broder.jpg");
-                state='steam';
-            } else {
-                myImage.setAttribute("src", "broder2.jpg");
-                state='black';
+<script>
+            let myImage = document.querySelector("img");
+            myImage.addEventListener('click', moveImage);
+            
+            function moveImage(){
+                var randNum_V = Math.round(Math.random() * availSpace_V);
+                var randNum_H = Math.round(Math.random() * availSpace_H);
+                
+                image_Element.style.top = randNum_V + "px";
+                image_Element.style.left = randNum_H + "px";
             }
-             console.log("state before: " + state);
-        }
         
-    
-    
-    
-    
+        
+//        let state = 'steam';
+//        let = myImage = document.querySelector("img");
+//        
+//       let imageNumber = 1 
+//        setInterval(swap4images, 1000)
+//        function swap4images(){
+//            imageNumber++;
+//            console.log("swap", imageNumber);
+//            if(imageNumber==4){
+//                myImage.removeEventListener('click', swapImage1click=0;
+//                
+//            }
+//        }
+        
+        
+/////////////////////////////// Cuenta en consola hasta cuatro
+//        let state = 'steam';
+//        let = myImage = document.querySelector("img");
+//        
+//       let imageNumber = 1 
+//        setInterval(swap4images, 1000)
+//        function swap4images(){
+//            imageNumber++;
+//            console.log("swap", imageNumber);
+//            if(imageNumber==4){
+//                imageNumber=0;
+//                
+//            }
+//        }
+// //////////////////////// End of script
+        
+//        myImage.addEventListener('click', function() {
+//                    console.log("state before: " + state);
+//                    if (state == 'steam') {
+//                        myImage.setAttribute("src", "broder.jpg");
+//                        state = 'black';
+//                    } else {
+//                        myImage.setAttribute("src", "broder2.jpg");
+//                        state = 'steam';
+//                    }
+//                    console.log("state before: " + state);
+//                }
+
     </script>
 </body>
+
 </html>
